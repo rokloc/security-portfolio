@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	
 	<head>
 		<meta charset="UTF-8">
-		<title>top page</title>
+		<title>名前を入力</title>
 	</head>
 	
-	<body class = "container">
-		<h1>Top</h1>
-		
-<!--		Thymeleafの基本　値の受け渡し-->
-		<p th:text="${msg1}"></p>
-		<p th:text="${msg2}"></p>
-		<p th:text="${msg3}"></p>
-		<p th:text="${msg4}"></p>
-		<p th:text="${msg5}"></p>
+	<body>
+		<form th:action="@{/other}" method="post">
+			<p th:text="${msg}"></p>
+			<input type="text" name="username"></input>
+			<button type="submit">送信</button>
+		</form>
 	</body>
 </html>
