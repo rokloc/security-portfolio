@@ -7,8 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 		
 	@RequestMapping("/")
-	public String index() {
+	public String topPage() {
 		return ("index");
+	}
+	@RequestMapping("/other")
+	public String otherPage() {
+		return ("other");
 	}
 
 }
