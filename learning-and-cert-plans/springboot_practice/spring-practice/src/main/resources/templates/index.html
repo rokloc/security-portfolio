@@ -3,14 +3,12 @@
 	
 	<head>
 		<meta charset="UTF-8">
-		<title>名前を入力</title>
+		<title>Top Page</title>
 	</head>
 	
 	<body>
-		<form th:action="@{/other}" method="post">
-			<p th:text="${msg}"></p>
-			<input type="text" name="username"></input>
-			<button type="submit">送信</button>
-		</form>
+		<ul>
+			<li th:each="msg : ${messages}" th:text="${msg}"></li>
+		</ul>
 	</body>
 </html>
