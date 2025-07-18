@@ -22,51 +22,7 @@ public class HelloController {
 		model.addAttribute("messages", service.getService());
 		return "index";
 	}
-	
-	
-	
-	
-	
 
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//@PostMapping("/other")
-//public String OtherPage(@RequestParam String username,  Model model) {
-//	model.addAttribute("hello", "こんにちは" + username + "さん");
-//	return "other";
-//}
